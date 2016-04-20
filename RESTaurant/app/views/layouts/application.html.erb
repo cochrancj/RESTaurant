@@ -2,13 +2,25 @@
 <html>
 <head>
   <title>RESTaurant</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <div class="wrapper">
+    <div class="head-logo">
+        <ul class="flex-logo">
+          <li class="flex-item">R</li>
+          <li class="flex-item">E</li>
+          <li class="flex-item">S</li>
+          <li class="flex-item">T</li>
+        </ul>
+    </div>
 <%= yield %>
+
+  </div>
 
 </body>
 </html>

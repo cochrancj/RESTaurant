@@ -1,4 +1,15 @@
 <h1>Welcome Back <%= @server.username %></h1>
 
   <%= button_to "Log Out", deletion_path, method: :delete %>
-  
+  <%= button_to "Create Order", orders_new_path, method: :get %>
+
+<div class="orders">
+  <% @orders.each do |order| %>
+    <h3><%= order.order %></h3>
+    <hr>
+
+    <%= button_to "Edit Order", edit_order_path(order.id), method: :get %>
+    <%= button_to "Delete Order", delete_path(order.id), method: :delete %>
+
+  <% end %>
+</div>

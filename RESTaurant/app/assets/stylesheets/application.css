@@ -13,3 +13,131 @@
  *= require_tree .
  *= require_self
  */
+
+/* --- ALL PAGES --- */
+ body {
+   box-sizing: border-box;
+ }
+
+.wrapper {
+  background-color: #28292B;
+  width: 600px;
+  height: 900px;
+  font-family: 'Roboto Condensed', sans-serif;
+  position: absolute;
+  border-radius: 2%;
+  /*display: flex;*/
+  /*justify-content: space-around;*/
+
+}
+
+.head-logo {
+  background-color: snow;
+  /*color: #28292B;*/
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,1);
+  width: 570px;
+  height: 300px;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 2%;
+}
+
+.flex-logo {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  text-shadow: 1px grey;
+  /*width: 300px;
+  height: 50px;
+  margin: auto;*/
+}
+
+.flex-item {
+  padding: 5px;
+  width: 100px;
+  height: 50px;
+  margin-top: 10px;
+  line-height: 250px;
+  font-size: 3em;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.textshadow .flex-item {
+  color: transparent;
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+/* --- INNER PAGES --- */
+
+.body-box {
+  /*display: flex;*/
+  /*justify-content: space-around;*/
+  margin-top: 10%;
+}
+
+.body-box a {
+  color: #A28D72;
+  /*color: #C3A682;*/
+  text-decoration: none;
+}
+
+.body-button {
+  display: block;
+  text-align: center;
+  font-size: 2em;
+  width: 90%;
+  /*margin: 0 auto;*/
+
+}
+
+.button {
+	/*-moz-box-shadow: 0px 3px 4px 1px #494a4d;
+	-webkit-box-shadow: 0px 3px 4px 1px #494a4d;*/
+	box-shadow: 0px 3px 4px 1px #494a4d;
+	background-color:#28292b;
+	/*-moz-border-radius:5px;
+	-webkit-border-radius:5px;*/
+	border-radius:5px;
+	border:1px solid #494a4d;
+	cursor:pointer;
+	padding:16px 31px;
+	text-shadow:5px 1px 11px #5f6166;
+  margin: 3%;
+}
+
+.button:hover {
+	background-color:#c3a682;
+}
+
+.button:active {
+	position:relative;
+	top:1px;
+}
+
+
+.nav a {
+  color: #A7A39D;
+  text-decoration: none;
+}
+
+.nav {
+  color: #9A6E38;
+}
+
+hr {
+  color: #9A6E38;
+  text-align: center;
+}

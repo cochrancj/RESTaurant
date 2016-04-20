@@ -1,4 +1,5 @@
 class ServersController < ApplicationController
+
   def new
     @server = Server.new
   end
@@ -8,9 +9,12 @@ class ServersController < ApplicationController
     redirect_to log_in_path
   end
 
+  def log_in
+  end
+
   def profile
-    if session[:user_id]
-      @server = Server.find session[:user_id]
+    if session[:server_id]
+      @server = Server.find session[:server_id]
     else
       redirect_to log_in_path
     end
