@@ -1,16 +1,29 @@
-<h1>New Server</h1>
+<div class="login">
 
-<%= form_for @server do |f| %>
+  <h1>New Server</h1>
 
-  <%= f.label :username %>
-  <%= f.text_field :username %>
 
-  <%= f.label :password %>
-  <%= f.password_field :password %>
 
-  <%= f.label :password_confirmation %>
-  <%= f.password_field :password_confirmation %>
+    <%= form_for @server do |f| %>
 
-  <%= f.submit %>
+      <span class="form"><%= f.label :username %></span>
+      <%= f.text_field :username, class: 'text-box' %>
 
-<% end %>
+      <br>
+
+      <span class="form"><%= f.label :password %></span>
+      <%= f.password_field :password, class: 'text-box' %>
+
+      <br>
+
+      <span class="form"><%= f.label :password_confirmation %></span>
+      <%= f.password_field :password_confirmation, class: 'text-box' %>
+
+      <br>
+
+      <%= f.submit %>
+
+    <% end %>
+
+
+</div>

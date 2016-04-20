@@ -72,7 +72,7 @@ ul {
   list-style-type: none;
   width: 90%;
   margin: 0 auto;
-  padding: 0;
+  padding: 0;s
 }
 
 .textshadow .flex-item {
@@ -90,7 +90,6 @@ ul {
 
 .body-box a {
   color: #A28D72;
-  /*color: #C3A682;*/
   text-decoration: none;
 }
 
@@ -100,7 +99,6 @@ ul {
   font-size: 2em;
   width: 90%;
   /*margin: 0 auto;*/
-
 }
 
 .button {
@@ -116,6 +114,9 @@ ul {
 	padding:16px 31px;
 	text-shadow:5px 1px 11px #5f6166;
   margin: 3%;
+  font-family: 'Roboto', sans-serif;
+  color: #A28D72;
+  font-size: 2em;
 }
 
 .button:hover {
@@ -127,6 +128,24 @@ ul {
 	top:1px;
 }
 
+.login {
+  margin-left: 5%;
+}
+
+.text-box {
+  padding: 1%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+
+h1 {
+  color: #C3A682;
+}
+
+.form {
+  color: #9A6E38;
+  padding-right: 5%;
+}
 
 .nav a {
   color: #A7A39D;
