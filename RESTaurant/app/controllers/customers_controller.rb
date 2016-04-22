@@ -20,6 +20,11 @@ class CustomersController < ApplicationController
 
   def new
     @customer = Customer.new
+    if session[:server_id]
+      @server = Server.find session[:server_id]
+    else
+      redirect_to log_in_path
+    end
   end
 
   def create
