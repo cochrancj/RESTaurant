@@ -1,6 +1,7 @@
 class Customer <ActiveRecord::Base
 
-  has_one :server
+  belongs_to :server
+  has_many :orders
   has_many :items, :through => :orders
 
 end

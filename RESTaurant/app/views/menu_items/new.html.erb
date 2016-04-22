@@ -1,1 +1,26 @@
-<h1>new menu item that was created</h1>
+<div class="login">
+
+<h1>ADD MENU ITEM</h1>
+
+<%= form_for @menu_item do |f| %>
+
+  <span class="form"><%= f.label :name %></span>
+  <%= f.text_field :name, class: 'text-box' %>
+
+  <br>
+
+  <span class="form"><%= f.label :description %></span>
+  <%= f.text_field :description, class: 'text-box' %>
+
+  <br>
+
+  <span class="form"><%= f.label :price %></span>
+  <%= f.number_field :price, class: 'text-box' %>
+
+  <br>
+
+  <%= f.submit %>
+
+<% end %>
+
+</div>

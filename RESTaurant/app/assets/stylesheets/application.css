@@ -72,7 +72,7 @@ ul {
   list-style-type: none;
   width: 90%;
   margin: 0 auto;
-  padding: 0;s
+  padding: 0;
 }
 
 .textshadow .flex-item {
@@ -85,7 +85,7 @@ ul {
 .body-box {
   /*display: flex;*/
   /*justify-content: space-around;*/
-  margin-top: 10%;
+  /*margin-top: 10%;*/
 }
 
 .body-box a {
@@ -140,6 +140,22 @@ ul {
 
 h1 {
   color: #C3A682;
+}
+
+h4 {
+  color: #C3A682;
+}
+
+.server-name {
+  width: 95%;
+  height: 2%;
+  text-align: right;
+  /*float:right;*/
+  padding-right: 5%;
+}
+
+.server-body {
+  /*float: none;*/
 }
 
 .form {

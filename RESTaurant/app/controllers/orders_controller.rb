@@ -20,23 +20,26 @@ class OrdersController < ApplicationController
 
   def new
     @order = Order.new
+    @customers = Customer.all
+    @menu_items = MenuItem.all
   end
 
   def create
-    order = Order.create order_params.merge({server_id: current_server.id})
-    redirect_to profile_path
+    order = Order.create
+    order_params
+    redirect_to orders_path
   end
 
   def destroy
     order = Order.find params[:id]
     order.destroy
-    redirect_to profile_path
+    redirect_to orders_path
   end
 
   private
 
   def order_params
-    params.reqire(:order).permit(:server_id, :menu_item_id, :customer_id)
+    params.require(:order).permit(:server_id, :menu_item_id, :customer_id)
   end
 
 end

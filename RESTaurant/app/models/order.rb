@@ -1,7 +1,7 @@
 class Order < ActiveRecord::Base
 
-  has_one :server
-  has_many :items
-  has_many :customers
+  belongs_to :server
+  belongs_to :menu_item
+  belongs_to :customer
 
 end

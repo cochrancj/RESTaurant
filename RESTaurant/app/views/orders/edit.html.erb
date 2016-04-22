@@ -1,1 +1,32 @@
 <h1>edit order</h1>
+
+<p>Couldn't this really populate on the server's profile page instead - I planned on adding all open orderst there anyways.</p>
+
+<p>Maybe this should be where the order pops up when you click on the open order - make all fields populate so they can be edited. How do you edit a drop-down?</p>
+
+<p>make a delete button</p>
+
+<div class="login">
+
+
+<h1>EDIT ORDER</h1>
+
+%= form_for @order do |f| %
+
+  <span class="form"> %= f.label :______ % need something for table number here </span>
+
+  %= f.text_field :description, class:'text-box' %
+
+
+<p>need server id to populate here</p>
+<p>need order id to populate here</p>
+<p>need boolean has paid to populate here</p>
+
+
+  %= f.submit %
+
+% end %
+
+</div>
+
+<%= link_to "EDIT ORDER", edit_order_path(@order.id) %>

@@ -23,8 +23,9 @@ class CustomersController < ApplicationController
   end
 
   def create
-    customer = Customer.create customer_params.merge({server_id: current_server.id})
-    redirect_to profile_path
+    customer = Customer.create
+    customer_params
+    redirect_to new_order_path
   end
 
   def destroy
@@ -36,7 +37,7 @@ class CustomersController < ApplicationController
   private
 
   def customer_params
-    params.reqire(:customer).permit(:server_id, :order_id, :table_number, :has_paid)
+    params.require(:customer).permit(:server_id, :order_id, :table_number, :has_paid)
   end
 
 end

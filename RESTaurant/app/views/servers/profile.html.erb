@@ -1,15 +1,17 @@
-<h1>Welcome Back <%= @server.username %></h1>
-
-  <%= button_to "Log Out", deletion_path, method: :delete %>
-  <%= button_to "Create Order", orders_new_path, method: :get %>
-
-<div class="orders">
-  <% @orders.each do |order| %>
-    <h3><%= order.order %></h3>
-    <hr>
-
-    <%= button_to "Edit Order", edit_order_path(order.id), method: :get %>
-    <%= button_to "Delete Order", delete_path(order.id), method: :delete %>
-
-  <% end %>
+<div class="server-name">
+  <h4>Welcome Back <%= @server.username %></h4>
 </div>
+
+<div class="server-body">
+  <ul class="body-button">
+
+    <li><%= button_to "LOG OUT", deletion_path, method: :delete, class: 'button' %></li>
+
+    <li><%= button_to "CREATE CUSTOMER", new_customer_path, method: :get, class: 'button' %></li>
+
+  </ul>
+</div>
+
+<h4>VIEW OPEN ORDERS</h4>
+<p>List Open Orders Here</p>
+<p>I need something here that will pull all the orders for this particular server by ID </p>

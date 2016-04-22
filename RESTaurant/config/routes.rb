@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :menu_items
   resources :orders
   resources :customers
+  resources :admins
 
   get '/servers/log_in'   => "servers#log_in", as: :log_in
 
