@@ -1,3 +1,7 @@
+<div class="server-name">
+  <h4>Welcome Back %= @server.username % </h4>
+</div>
+
 <h1>edit order</h1>
 
 <p>Couldn't this really populate on the server's profile page instead - I planned on adding all open orderst there anyways.</p>
@@ -6,7 +10,7 @@
 
 <p>make a delete button</p>
 
-<div class="login">
+<div class="form-page-body">
 
 
 <h1>EDIT ORDER</h1>
@@ -23,10 +27,15 @@
 <p>need boolean has paid to populate here</p>
 
 
-  %= f.submit %
+  %= submit_tag "EDIT ORDER", class: "button" %
 
 % end %
 
 </div>
 
-<%= link_to "EDIT ORDER", edit_order_path(@order.id) %>
+
+<ul class="body-button">
+
+  <li class="button"> %= link_to "DELETE DISH", delete_menu_item_path % </li>
+
+</ul>

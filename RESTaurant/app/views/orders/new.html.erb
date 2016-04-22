@@ -1,7 +1,4 @@
-<h1>Welcome Back %= @server.username % </h1>
-
-
-WHY IS THIS NOT WORKING? - ADDING SIMPLE
+<h1>Welcome Back <%= @server.username %> </h1>
 
 
 <div class="orders">
@@ -15,5 +12,17 @@ WHY IS THIS NOT WORKING? - ADDING SIMPLE
 <p>If I do that, will I no longer need the menu item table?</p>
 
 <p>If I go down that route, how will i handle the food editing, etc. for the admins?</p>
+
+
+<%= form_for @order do |f| %>
+  <%= f.hidden_field "server_id", :value => @server.id%>
+  <%= f.hidden_field "customer_id", :value => @server.id%>
+  <span class="form"><%= f.label :menu_item %></span>
+  <span class="form"><%= f.select( :menu_item, options_for_select([['???ID???','Quail Soul'],['???ID???','Zebra Steak'],['???ID???','Duck Hearts'],['???ID???','Sturgeon'],['need','need'],['need','need']] ) ) %></span>
+  <br>
+
+  <%= submit_tag "FINISH ORDER", class: "button" %>
+
+  <% end %>
 
 </div>

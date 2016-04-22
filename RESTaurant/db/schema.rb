@@ -11,7 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160421230644) do
+ActiveRecord::Schema.define(version: 20160422194332) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "customers", force: :cascade do |t|
     t.integer  "table_number"
@@ -38,6 +41,7 @@ ActiveRecord::Schema.define(version: 20160421230644) do
     t.integer  "customer_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.string   "menu_item"
   end
 
   create_table "servers", force: :cascade do |t|
@@ -48,4 +52,7 @@ ActiveRecord::Schema.define(version: 20160421230644) do
     t.datetime "updated_at",      null: false
   end
 
+  add_foreign_key "orders", "customers"
+  add_foreign_key "orders", "menu_items"
+  add_foreign_key "orders", "servers"
 end

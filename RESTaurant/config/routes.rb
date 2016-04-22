@@ -17,7 +17,9 @@ Rails.application.routes.draw do
   delete '/sessions'      => "sessions#destroy", as: :deletion
   get '/servers/profile'  => "servers#profile", as: :profile
 
-
+  # resources :customers, only: [:create, :index, :new, :edit, :delete] do
+  #   resources :orders, only: [:create, :show, :index]
+  # end
 
   # get '/customers'          => "customers#index"
   # get '/customers/new'      => "customers#new"
@@ -41,15 +43,15 @@ Rails.application.routes.draw do
   # delete '/menu_items/:id'   => "menu_items#destroy", as: :delete
   #
   #
-  get '/orders'          => "orders#index"
-  get '/orders/new'      => "orders#new"
-  get '/orders/:id'      => "orders#show"
+  # get '/orders'          => "orders#index"
+  # get '/orders/new'      => "orders#new"
+  # get '/orders/:id'      => "orders#show"
 
   # get '/orders/:id/edit' => "orders#edit", as: :edit_order
   # patch '/orders/:id'    => "orders#update", as: :order
 
-  post '/orders'         => "orders#create", as: :create_order
-  delete '/orders/:id'   => "orders#destroy", as: :delete
+  # post '/orders'         => "orders#create", as: :create_order
+  # delete '/orders/:id'   => "orders#destroy", as: :delete
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

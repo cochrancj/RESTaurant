@@ -7,18 +7,16 @@
 <h2>CREATE NEW CUSTOMER</h2>
 
 <%= form_for @customer do |f| %>
-
-  <%= f.label :table_number %>
-  <%= f.select( :table_number, options_for_select([['R1','R1'],['R2','R2'],['M3','M3'],['M4','M4'],['L5','L5'],['L6','L6']] ) ) %>
+  <%= f.hidden_field "server_id", :value => @server.id%>
+  <span class="form"><%= f.label :table_number %></span>
+  <span class="form"><%= f.select( :table_number, options_for_select([['R1','R1'],['R2','R2'],['M3','M3'],['M4','M4'],['L5','L5'],['L6','L6']] ) ) %></span>
   <br>
-  <%= f.label :seat_number %>
-  <%= f.select( :seat_number, options_for_select([[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8]] ) ) %>
+  <span class="form"><%= f.label :seat_number %></span>
+  <span class="form"><%= f.select( :seat_number, options_for_select([[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8]] ) ) %></span>
   <br>
 
-  <%= f.submit %>
+  <%= submit_tag "CREATE CUSTOMER", class: "button" %>
 
   <% end %>
 
 </div>
-
-<h2>Add a Link To Edit Customers And A Link To Delete Customers</h2>

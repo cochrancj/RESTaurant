@@ -1,4 +1,7 @@
-<div class="login">
+<p>welcome admin</p>
+<h1>THIS SHOULD ONLY BE AVAILABLE TO ADMINS</h1>
+
+<div class="form-page-body">
 
 <h1>ALL MENU ITEMS </h1>
 
@@ -8,7 +11,6 @@
 
 <p>This needs to be a list that populates based on what is in the database with buttons for edit and delete that shoot you to those pages</p>
 
-<%= link_to "ADD DISH", new_menu_item_path %>
 
 <% @menu_items.each do |menu_item| %>
 
@@ -20,3 +22,10 @@
     <% end %>
 
     <h1>CLICKING ON THE NAME OF THE DISH IS ROUTING YOU TO THE WRONG PLACE</h1>
+</div>
+
+    <ul class="body-button">
+
+      <li class="button"> <%= link_to "ADD DISH", new_menu_item_path %> </li>
+
+    </ul>

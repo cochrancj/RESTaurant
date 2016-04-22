@@ -1,8 +1,30 @@
-<h1>create new customer</h1>
+<div class="server-name">
+  <h4>Welcome Back <%= @server.username %> </h4>
+</div>
 
-<p>This is probably where the server should be shot instead of the order page. </p>
+<h1>CUSTOMERS</h1>
 
-<h1>Create Customer</h1>
-<p>Insert form</p>
+<p>Insert funcitonality here to list all customers. </p>
 
-<p>
+
+
+<% @customers.each do |customer| %>
+
+    <h4>Seat Number: <%= link_to( customer.seat_number, customer_path(customer.id) ) %></h4>
+
+    <p>Table Number: <%= customer.table_number %></p>
+    <p>Have They Paid? <%= customer.has_paid %></p>
+
+    <!-- %= link_to "ADD FOOD", customer_orders_path(customer.id) %> |
+
+    %= link_to "EDIT CUSTOMER", edit_customer_path(customer.id) %> -->
+
+    <% end %>
+
+<p>customer link is weird; customer table number is not actully grabbing anything; customer has paid is doing nothing.</p>
+
+
+
+<h2>Add a Link To Edit Customers And A Link To Delete Customers</h2>
+
+<h1>THIS SHOULD BE A LIST OF ALL CUSTOMERS WITH BUTTONS TO DELETE OR EDIT EACH</h1>

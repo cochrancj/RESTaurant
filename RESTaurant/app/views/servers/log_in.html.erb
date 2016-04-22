@@ -1,16 +1,17 @@
-<div class="login">
+<div class="form-page-body">
   <h1>LOG IN </h1>
 
 
     <%= form_tag '/sessions', method: :post do %>
 
       <span class="form"><%= label_tag :username %></span>
-      <%= text_field_tag :username %>
+      <span class="text-box"><%= text_field_tag :username %></span>
 
+      <br>
       <br>
 
       <span class="form"><%= label_tag :password %></span>
-      <%= password_field_tag :password %>
+      <span class="text-box"><%= password_field_tag :password %></span>
 
       <br>
 

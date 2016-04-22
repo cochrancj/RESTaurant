@@ -1,4 +1,7 @@
-<div class="login">
+<p>welcome admin</p>
+<h1>THIS SHOULD ONLY BE AVAILABLE TO ADMINS</h1>
+
+<div class="form-page-body">
 
 <h1>EDIT MENU ITEM </h1>
 
@@ -13,10 +16,14 @@
         <span class="form"><%= f.label :price %></span>
         <%= f.number_field :price, class:'text-box' %>
 
-        <%= f.submit %>
+        <%= submit_tag "EDIT ITEM", class: "button" %>
 
       <% end %>
 
 </div>
 
   <%= link_to "DELETE DISH", menu_item_path(@menu_item), method: :delete %>
+
+  <p>try addind class: 'body-button' to the link above</p>
+  <p>add a link to create new dish as well</p>
+  <p>this may need to be done through the body button ULs</p>
