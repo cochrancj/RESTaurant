@@ -17,6 +17,8 @@
 /* --- ALL PAGES --- */
  body {
    box-sizing: border-box;
+   background-color: #28292B;
+
  }
 
 .wrapper {
@@ -83,13 +85,16 @@ ul {
 /* --- INNER PAGES --- */
 
 .body-box {
-  /*display: flex;*/
-  /*justify-content: space-around;*/
-  /*margin-top: 10%;*/
+  margin-left: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: #C3A682;
 }
 
 .body-box a {
-  color: #A28D72;
+  color: #9A6E38;
   text-decoration: none;
 }
 
@@ -128,7 +133,7 @@ ul {
 	top:1px;
 }
 
-.custom-dropdown {
+select.custom-dropdown {
  -webkit-appearance: none;  /*REMOVES DEFAULT CHROME & SAFARI STYLE*/
  -moz-appearance: none;  /*REMOVES DEFAULT FIREFOX STYLE*/
  border: 0 !important;  /*REMOVES BORDER*/
@@ -160,8 +165,39 @@ h1 {
   color: #C3A682;
 }
 
+h2 {
+  color: #9A6E38;
+}
+
 h4 {
+  color: #9A6E38;
+}
+
+.customer {
+  margin-top: 4%;
+}
+
+.customer-info {
   color: #C3A682;
+  font-size: 1.3em;
+}
+
+.customer-label {
+  color: #9A6E38;
+  font-size: 1.3em;
+}
+
+p {
+  color: #A7A39D;
+}
+
+.pipes {
+  color: #A7A39D;
+}
+
+.seat-link {
+  color: #C3A682;
+  font-size: 1.5em;
 }
 
 .server-name {
@@ -181,14 +217,14 @@ h4 {
   padding-right: 5%;
 }
 
-.nav a {
+/*.nav a {
   color: #A7A39D;
   text-decoration: none;
 }
 
 .nav {
   color: #9A6E38;
-}
+}*/
 
 hr {
   color: #9A6E38;

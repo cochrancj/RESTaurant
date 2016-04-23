@@ -9,6 +9,11 @@ class SessionsController < ApplicationController
     if server && server.authenticate( password )
       session[:server_id] = server.id
       redirect_to profile_path
+    # elsif server.username == "admin"
+    #   redirect_to menu_items_path
+
+      # THIS REDIRECT IS NOT WORKING
+
     else
       redirect_to log_in_path
     end

@@ -1,30 +1,26 @@
 <div class="server-name">
-  <h4>Welcome Back <%= @server.username %> </h4>
+  <h4>WELCOME BACK <%= @server.username %> </h4>
 </div>
+
+<div class="form-page-body">
 
 <h1>CUSTOMERS</h1>
 
-<p>Insert funcitonality here to list all customers. </p>
-
-
-
 <% @customers.each do |customer| %>
 
-    <h4>Seat Number: <%= link_to( customer.seat_number, customer_path(customer.id) ) %></h4>
+    <h4>SEAT NUMBER:   <span class="seat-link"><%= link_to( customer.seat_number, customer_path(customer.id) ) %></h4></span>
 
-    <p>Table Number: <%= customer.table_number %></p>
-    <p>Have They Paid? <%= customer.has_paid %></p>
+    <h4>TABLE NUMBER:   <span class="seat-link"> <%= customer.table_number %></h4></span>
 
-    <!-- %= link_to "ADD FOOD", customer_orders_path(customer.id) %> |
+    <h4>HAVE THEY PAID?   <span class="seat-link"> <%= customer.has_paid %></h4></span>
 
-    %= link_to "EDIT CUSTOMER", edit_customer_path(customer.id) %> -->
+    <h1>ADD FOOD ORDER - TABLE # NOT PULLING</h1>
+
+    <%= link_to "MARK AS PAID", customer_path(customer.id), method: :delete %> <span class="pipes">  |  </span>
+
+    <%= link_to "EDIT CUSTOMER", edit_customer_path(customer.id) %>
+
+    <br>
+    <hr>
 
     <% end %>
-
-<p>customer link is weird; customer table number is not actully grabbing anything; customer has paid is doing nothing.</p>
-
-
-
-<h2>Add a Link To Edit Customers And A Link To Delete Customers</h2>
-
-<h1>THIS SHOULD BE A LIST OF ALL CUSTOMERS WITH BUTTONS TO DELETE OR EDIT EACH</h1>

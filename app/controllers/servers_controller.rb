@@ -2,6 +2,11 @@ class ServersController < ApplicationController
 
   def new
     @server = Server.new
+
+    # if current_server.admin?
+    #   redirect_to menu_items_path
+    # end
+
   end
 
   def create
@@ -18,6 +23,7 @@ class ServersController < ApplicationController
     else
       redirect_to log_in_path
     end
+
   end
 
   private

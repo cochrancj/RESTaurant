@@ -1,27 +1,26 @@
-<p>welcome admin</p>
-<h1>THIS SHOULD ONLY BE AVAILABLE TO ADMINS</h1>
+<div class="server-name">
+  <h4>WELCOME BACK <%= @server.username %> </h4>
+</div>
 
-<div class="form-page-body">
 
 <h1>ALL MENU ITEMS </h1>
 
-<p>this should be available to the admin only - and may just be a dupe of the admin index page. Should I just route it all here instead?</p>
-
-<p>Same with the other pages in this folder. This is the stuff I want the admin to have access to.</p>
-
-<p>This needs to be a list that populates based on what is in the database with buttons for edit and delete that shoot you to those pages</p>
-
-
 <% @menu_items.each do |menu_item| %>
 
-    <h4><%= link_to( menu_item.name, menu_item_path(menu_item.id) ) %></h4>
+    <h2><%= menu_item.name.upcase %></h2>
 
     <p><%= menu_item.description %> .........
     <%= menu_item.price %></p>
 
+    <%= link_to "DELETE DISH", menu_item_path(menu_item.id), method: :delete %> <span class="pipes">  |  </span>
+
+    <%= link_to "EDIT DISH", edit_menu_item_path(menu_item.id) %>
+
+    <br>
+    <hr>
+
     <% end %>
 
-    <h1>CLICKING ON THE NAME OF THE DISH IS ROUTING YOU TO THE WRONG PLACE</h1>
 </div>
 
     <ul class="body-button">

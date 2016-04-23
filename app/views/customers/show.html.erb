@@ -1,15 +1,21 @@
+<div class="server-name">
+  <h4>WELCOME BACK <%= @server.username %> </h4>
+</div>
 
-<%= @customer.table_number %>
+<div class="customer">
+<span class="customer-label">TABLE NUMBER:</span> <span class="customer-info"><%= @customer.table_number %></span> <span class="pipes">  |  </span>
+
+<span class="customer-label"> SEAT NUMBER:</span> <span class="customer-info"><%= @customer.seat_number %></span>
+</div>
 
 
+<h1>orders controller needs a create method to handle this
+access this with parms
 
-orders controller needs a create method to handle this
-access this with parma
+
+submit to ..... redirect to all customers page</h1>
 
 
-submit to ..... redirect to all customers page
-
-<div class="orders">
 
 <h1>ADD FOOD</h1>
 
@@ -17,6 +23,7 @@ submit to ..... redirect to all customers page
 <%= form_for @order, url: new_order_path do |f| %>
   <%= f.hidden_field "server_id", :value => @server.id%>
   <%= f.hidden_field "customer_id", :value => @server.id%>
+
   <span class="form"><%= f.label :menu_item %></span>
   <%= f.collection_select :menu_item_id, MenuItem.all, :id, :name, class: "custom-dropdown" %>
   <br>
@@ -24,5 +31,3 @@ submit to ..... redirect to all customers page
   <%= submit_tag "FINISH ORDER", class: "button" %>
 
   <% end %>
-
-</div>

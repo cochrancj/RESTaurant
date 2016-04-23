@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160422194332) do
+ActiveRecord::Schema.define(version: 20160423190942) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -20,9 +20,9 @@ ActiveRecord::Schema.define(version: 20160422194332) do
     t.integer  "table_number"
     t.integer  "server_id"
     t.integer  "order_id"
-    t.boolean  "has_paid"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.boolean  "has_paid",     default: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
     t.integer  "seat_number"
   end
 
@@ -48,8 +48,9 @@ ActiveRecord::Schema.define(version: 20160422194332) do
     t.string   "username"
     t.string   "password"
     t.string   "password_digest"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",                      null: false
+    t.datetime "updated_at",                      null: false
+    t.boolean  "admin",           default: false
   end
 
   add_foreign_key "orders", "customers"
