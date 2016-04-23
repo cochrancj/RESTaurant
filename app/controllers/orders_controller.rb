@@ -1,35 +1,19 @@
 class OrdersController < ApplicationController
 
+  before_action :get_server_or_redirect_to_log_in
+
   def index
     @orders = Order.all
-
-    if session[:server_id]
-      @server = Server.find session[:server_id]
-    else
-      redirect_to log_in_path
-    end
 
   end
 
   def show
     @order = Order.find params[:id]
 
-    if session[:server_id]
-      @server = Server.find session[:server_id]
-    else
-      redirect_to log_in_path
-    end
-
   end
 
   def edit
     @order = Order.find params[:id]
-
-    if session[:server_id]
-      @server = Server.find session[:server_id]
-    else
-      redirect_to log_in_path
-    end
 
   end
 
@@ -38,12 +22,6 @@ class OrdersController < ApplicationController
     order.update order_params
     redirect_to orders_path
 
-    if session[:server_id]
-      @server = Server.find session[:server_id]
-    else
-      redirect_to log_in_path
-    end
-
   end
 
   def new
@@ -51,28 +29,12 @@ class OrdersController < ApplicationController
     @customers = Customer.all
     @menu_items = MenuItem.all
 
-    if session[:server_id]
-      @server = Server.find session[:server_id]
-    else
-      redirect_to log_in_path
-    end
-
   end
 
   def create
-    order = Order.create
-    order.create
-    # THIS NEEDS TO BE FIXED AFTER MY FORM IS CORRECT
-    # (params )
-    # user = User.create(name: "David", occupation: "Code Artist")
-    redirect_to customer_path
-    # (add param shit)
+    order = Order.create!(order_params)
 
-    if session[:server_id]
-      @server = Server.find session[:server_id]
-    else
-      redirect_to log_in_path
-    end
+    redirect_to customers_path
 
   end
 
@@ -81,18 +43,22 @@ class OrdersController < ApplicationController
     order.destroy
     redirect_to orders_path
 
-    if session[:server_id]
-      @server = Server.find session[:server_id]
-    else
-      redirect_to log_in_path
-    end
-
   end
 
   private
 
   def order_params
     params.require(:order).permit(:server_id, :menu_item_id, :customer_id)
+  end
+
+  def get_server_or_redirect_to_log_in
+
+    if session[:server_id]
+      @server = Server.find session[:server_id]
+    else
+      redirect_to log_in_path
+    end
+
   end
 
 end

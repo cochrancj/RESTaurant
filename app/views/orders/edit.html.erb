@@ -1,41 +1,18 @@
 <div class="server-name">
-  <h4>Welcome Back %= @server.username % </h4>
+  <h4>Welcome Back <%= current_server.username %> </h4>
 </div>
 
-<h1>edit order</h1>
-
-<p>Couldn't this really populate on the server's profile page instead - I planned on adding all open orderst there anyways.</p>
-
-<p>Maybe this should be where the order pops up when you click on the open order - make all fields populate so they can be edited. How do you edit a drop-down?</p>
-
-<p>make a delete button</p>
-
-<div class="form-page-body">
+<h1>EDIT FOOD</h1>
 
 
-<h1>EDIT ORDER</h1>
+<%= form_for @order do |f| %>
+  <%= f.hidden_field "server_id", :value => @server.id%>
+  <%= f.hidden_field "customer_id", :value => @customer.id%>
 
-%= form_for @order do |f| %
+  <span class="form"><%= f.label :menu_item %></span>
+  <%= f.collection_select :menu_item_id, MenuItem.all, :id, :name, class: "custom-dropdown" %>
+  <br>
 
-  <span class="form"> %= f.label :______ % need something for table number here </span>
+  <%= submit_tag "FINISH ORDER", class: "button" %>
 
-  %= f.text_field :description, class:'text-box' %
-
-
-<p>need server id to populate here</p>
-<p>need order id to populate here</p>
-<p>need boolean has paid to populate here</p>
-
-
-  %= submit_tag "EDIT ORDER", class: "button" %
-
-% end %
-
-</div>
-
-
-<ul class="body-button">
-
-  <li class="button"> %= link_to "DELETE DISH", delete_menu_item_path % </li>
-
-</ul>
+  <% end %>

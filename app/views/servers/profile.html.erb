@@ -1,8 +1,11 @@
 <div class="server-name">
-  <h4>WELCOME BACK <%= @server.username %></h4>
+  <h4>WELCOME BACK <%= current_server.username %></h4>
 </div>
 
+<ul class="body-button">
 
-  <%= button_to "LOG OUT", deletion_path, method: :delete, class: 'button' %>
+  <li class="button"><%= link_to "LOG OUT", deletion_path, method: :delete %></li>
 
-  <%= button_to "CREATE CUSTOMER", new_customer_path, method: :get, class: 'button' %>
+  <li class="button"><%= link_to "NEW ORDER", new_customer_path, method: :get %></li>
+
+</ul>

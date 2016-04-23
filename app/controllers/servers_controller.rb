@@ -2,17 +2,21 @@ class ServersController < ApplicationController
 
   def new
     @server = Server.new
-
-    # if current_server.admin?
-    #   redirect_to menu_items_path
-    # end
-
+      unless current_server.admin?
+        redirect_to log_in_path
+      end
   end
 
   def create
+    unless current_server.admin?
+      redirect_to log_in_path
+    end
+
     server = Server.create server_params
     redirect_to log_in_path
   end
+
+
 
   def log_in
   end
@@ -29,7 +33,9 @@ class ServersController < ApplicationController
   private
 
   def server_params
-    params.require(:server).permit(:username, :password, :password_confirmation)
+    params.require(:server).permit(:username, :password, :password_confirmation, :admin)
   end
+
+
 
 end

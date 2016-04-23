@@ -9,8 +9,6 @@ class CustomersController < ApplicationController
       redirect_to log_in_path
     end
 
-    # redirect_to customers_path
-
   end
 
   def show
@@ -74,7 +72,7 @@ class CustomersController < ApplicationController
 
   def destroy
     customer = Customer.find params[:id]
-    customer.destroy
+    customer.destroy(customer_params)
     redirect_to customers_path
 
     if session[:server_id]

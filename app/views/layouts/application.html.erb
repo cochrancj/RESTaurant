@@ -21,9 +21,14 @@
 
     <div class="body-box">
 
+
       <%= yield %>
 
-    </div>
+<nav>
+  <ul>
+    <li><%= link_to "HOME", :root %> <span class="pipes"> | </span></li>
+  </ul>
+</nav>
 
   </div>
 

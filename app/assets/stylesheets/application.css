@@ -208,8 +208,17 @@ p {
   padding-right: 5%;
 }
 
+.home {
+  width: 95%;
+  height: 2%;
+  /*float: left;*/
+  text-align: right;
+  padding-right: 5%;
+  padding-top: 2%;
+}
+
 .server-body {
-  /*float: none;*/
+  float: none;
 }
 
 .form {
@@ -217,14 +226,16 @@ p {
   padding-right: 5%;
 }
 
-/*.nav a {
+/*nav a {
   color: #A7A39D;
   text-decoration: none;
-}
-
-.nav {
-  color: #9A6E38;
 }*/
+
+nav {
+  /*color: #9A6E38;*/
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
 
 hr {
   color: #9A6E38;
