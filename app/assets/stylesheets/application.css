@@ -102,12 +102,12 @@ ul {
 }
 
 .button {
-	/*-moz-box-shadow: 0px 3px 4px 1px #494a4d;
-	-webkit-box-shadow: 0px 3px 4px 1px #494a4d;*/
+	-moz-box-shadow: 0px 3px 4px 1px #494a4d;
+	-webkit-box-shadow: 0px 3px 4px 1px #494a4d;
 	box-shadow: 0px 3px 4px 1px #494a4d;
 	background-color:#28292b;
-	/*-moz-border-radius:5px;
-	-webkit-border-radius:5px;*/
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
 	border-radius:5px;
 	border:1px solid #494a4d;
 	cursor:pointer;
@@ -126,6 +126,24 @@ ul {
 .button:active {
 	position:relative;
 	top:1px;
+}
+
+.custom-dropdown {
+ -webkit-appearance: none;  /*REMOVES DEFAULT CHROME & SAFARI STYLE*/
+ -moz-appearance: none;  /*REMOVES DEFAULT FIREFOX STYLE*/
+ border: 0 !important;  /*REMOVES BORDER*/
+
+ color: #A28D72;
+ -webkit-border-radius: 5px;
+ border-radius: 5px;
+ font-family: 'Roboto', sans-serif;
+ font-size: 14px;
+ padding: 10px;
+ width: 35%;
+ cursor: pointer;
+
+ background: #28292b url(drop-down-arrow.png) no-repeat right center;
+ background-size: 40px 37px; /*TO ACCOUNT FOR @2X IMAGE FOR RETINA */
 }
 
 .form-page-body {

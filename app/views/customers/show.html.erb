@@ -1,17 +1,12 @@
 
 <%= @customer.table_number %>
 
-create a new form -
 
-form_tag that does a post request to orders/new
 
 orders controller needs a create method to handle this
 access this with parma
 
 
-drop down with selections from
-hidden field for server id
-hiden field for customer id
 submit to ..... redirect to all customers page
 
 <div class="orders">
@@ -23,7 +18,7 @@ submit to ..... redirect to all customers page
   <%= f.hidden_field "server_id", :value => @server.id%>
   <%= f.hidden_field "customer_id", :value => @server.id%>
   <span class="form"><%= f.label :menu_item %></span>
-  <span class="form"><%= f.collection_select :menu_item_id, MenuItem.all, :id, :name %></span>
+  <%= f.collection_select :menu_item_id, MenuItem.all, :id, :name, class: "custom-dropdown" %>
   <br>
 
   <%= submit_tag "FINISH ORDER", class: "button" %>

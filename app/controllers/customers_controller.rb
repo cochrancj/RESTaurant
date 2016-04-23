@@ -9,7 +9,7 @@ class CustomersController < ApplicationController
       redirect_to log_in_path
     end
 
-    # redirect_to customer_orders_path
+    # redirect_to customers_path
 
   end
 
