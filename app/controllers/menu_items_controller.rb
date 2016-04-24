@@ -31,8 +31,20 @@ class MenuItemsController < ApplicationController
   end
 
   def destroy
-    MenuItem.destroy params[:id]
-    redirect_to menu_items_path
+    # MenuItem.destroy params[:id]
+    # redirect_to menu_items_path
+
+    menu_item = MenuItem.find params[:id]
+
+    if menu_item.orders.any?
+      flash[:error] = "Can't 86 menu item - open orders"
+      redirect_to menu_items_path
+    else
+      menu_item.destroy!
+      flash[:success] = "You've served all portions - safe to 86"
+      redirect_to menu_items_path
+    end
+
   end
 
   private

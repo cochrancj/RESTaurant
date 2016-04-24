@@ -33,10 +33,23 @@ class CustomersController < ApplicationController
 
   def destroy
     customer = Customer.find params[:id]
-    customer.destroy
+    # customer.destroy
+    # redirect_to customers_path
+
+    # tried but didn't work
     # customer.destroy[:customer.id]
     # customer.destroy(customer_params)
-    redirect_to customers_path
+
+
+    if customer.orders.any?
+      flash[:error] = "Can't delete customer - open orders"
+      redirect_to customers_path
+    else
+      customer.destroy!
+      flash[:success] = "Customer has paid - they can leave"
+      redirect_to customers_path
+    end
+
   end
 
   private
