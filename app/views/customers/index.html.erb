@@ -23,11 +23,13 @@
         <% end %> </h4> </span>
     <br>
 
-    <%= link_to "MARK AS PAID", customer_path(customer.id), method: :delete %> <span class="pipes">  |  </span>
+    <div style="centerline">
+      <%= link_to "MARK AS PAID", customer_path(customer.id), method: :delete %> <span class="pipes">  |  </span>
 
-    <%= link_to "EDIT CUSTOMER INFO", edit_customer_path(customer.id) %> <span class="pipes">  |  </span>
+      <%= link_to "EDIT CUSTOMER INFO", edit_customer_path(customer.id) %> <span class="pipes">  |  </span>
 
-    <%= link_to "ADD FOOD", customer_path(customer.id) %>
+      <%= link_to "ADD FOOD", customer_path(customer.id) %>
+    </div>
 
     <br>
     <hr>

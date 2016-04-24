@@ -37180,3 +37180,917 @@ Processing by MenuItemsController#index as HTML
   [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items"[0m
   Rendered menu_items/index.html.erb within layouts/application (1.9ms)
 Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-04-24 11:15:43 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (116.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 2147ms (Views: 2146.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/servers/new" for ::1 at 2016-04-24 11:27:52 -0400
+Processing by ServersController#new as HTML
+Completed 500 Internal Server Error in 337ms (ActiveRecord: 241.9ms)
+
+NoMethodError (undefined method `admin?' for nil:NilClass):
+  app/controllers/servers_controller.rb:5:in `new'
+
+
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.4ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (206.9ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (464.9ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (815.0ms)
+
+
+Started GET "/servers/new" for ::1 at 2016-04-24 11:27:56 -0400
+Processing by ServersController#new as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `admin?' for nil:NilClass):
+  app/controllers/servers_controller.rb:5:in `new'
+
+
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.4ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.5ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (60.1ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/carolyncochran/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (130.6ms)
+
+
+Started GET "/servers/log_in" for ::1 at 2016-04-24 11:28:04 -0400
+Processing by ServersController#log_in as HTML
+  Rendered servers/log_in.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 841ms (Views: 840.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/sessions" for ::1 at 2016-04-24 11:28:16 -0400
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"SUg0PgcZcHW8DqxVv9rdNIAsEZIWsNowLnrBpiSGnlUopVkVfTssvYoYT+nqs5/y8+T342If3nfMrZeAhZk4/g==", "username"=>"veronica", "password"=>"[FILTERED]", "commit"=>"LOG IN"}
+  [1m[35mServer Load (210.1ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."username" = $1 LIMIT 1  [["username", "veronica"]]
+Redirected to http://localhost:3000/servers/profile
+Completed 302 Found in 542ms (ActiveRecord: 236.1ms)
+
+
+Started GET "/servers/profile" for ::1 at 2016-04-24 11:28:16 -0400
+Processing by ServersController#profile as HTML
+  [1m[36mServer Load (0.3ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered servers/profile.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 552ms (Views: 550.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/customers/new" for ::1 at 2016-04-24 11:28:20 -0400
+Processing by CustomersController#new as HTML
+  Parameters: {"authenticity_token"=>"YvfPiJkM7y8MtmcCaycckwa40gtAs6FCHM1mM5N3iwEDGqKj4y6z5zqghL4+Tl5VdXA0ejQcpQX+GjAVMmgtqg=="}
+  [1m[36mServer Load (0.4ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered customers/new.html.erb within layouts/application (118.8ms)
+Completed 200 OK in 256ms (Views: 164.2ms | ActiveRecord: 27.6ms)
+
+
+Started POST "/customers" for ::1 at 2016-04-24 11:28:36 -0400
+Processing by CustomersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tlkntqTKO8lq8VXjhubWIYX5SRb6I+AVZFKFBgPS4EXXtEqd3uhnAVzntl/Tj5Tn9jGvZ46M5FKGhdMgos1G7g==", "customer"=>{"server_id"=>"1", "table_number"=>"4", "seat_number"=>"4"}, "commit"=>"CREATE ORDER"}
+  [1m[36mServer Load (0.2ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (19.8ms)[0m  BEGIN
+  [1m[36mSQL (381.9ms)[0m  [1mINSERT INTO "customers" ("server_id", "table_number", "seat_number", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["server_id", 1], ["table_number", 4], ["seat_number", 4], ["created_at", "2016-04-24 15:28:36.025445"], ["updated_at", "2016-04-24 15:28:36.025445"]]
+  [1m[35m (53.6ms)[0m  COMMIT
+Redirected to http://localhost:3000/customers
+Completed 302 Found in 482ms (ActiveRecord: 455.5ms)
+
+
+Started GET "/customers" for ::1 at 2016-04-24 11:28:36 -0400
+Processing by CustomersController#index as HTML
+  [1m[36mServer Load (0.3ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCustomer Load (13.3ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  [1m[35mMenuItem Load (117.6ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 11]]
+  Rendered menu_items/_menu_item.html.erb (0.7ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.4ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 14]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.4ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 18]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.4ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 19]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.3ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 15]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.3ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 16]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 17]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 26]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 27]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 28]]
+  Rendered customers/index.html.erb within layouts/application (547.9ms)
+Completed 200 OK in 586ms (Views: 421.3ms | ActiveRecord: 163.5ms)
+
+
+Started GET "/customers/28" for ::1 at 2016-04-24 11:28:46 -0400
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[35mServer Load (0.3ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT 1[0m  [["id", 28]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mMenuItem Load (0.3ms)[0m  [1mSELECT "menu_items".* FROM "menu_items"[0m
+  Rendered customers/show.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 51ms (Views: 44.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/orders" for ::1 at 2016-04-24 11:28:48 -0400
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TBvTK/LTNcpHh0Lb/jOPie3wTx4fR6fKoZtkk49vp4ot9r4AiPFpAnGRoWerWs1Pnjipb2voo41DTDK1LnABIQ==", "order"=>{"server_id"=>"1", "customer_id"=>"28", "menu_item_id"=>"4"}, "commit"=>"FINISH ORDER"}
+  [1m[35mServer Load (0.3ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (105.5ms)[0m  INSERT INTO "orders" ("server_id", "menu_item_id", "customer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["server_id", 1], ["menu_item_id", 4], ["customer_id", 28], ["created_at", "2016-04-24 15:28:48.440134"], ["updated_at", "2016-04-24 15:28:48.440134"]]
+  [1m[36m (15.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/customers
+Completed 302 Found in 127ms (ActiveRecord: 121.5ms)
+
+
+Started GET "/customers" for ::1 at 2016-04-24 11:28:48 -0400
+Processing by CustomersController#index as HTML
+  [1m[35mServer Load (0.2ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT "customers".* FROM "customers"
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 11]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 14]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 18]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 19]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 15]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 16]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 17]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.2ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 26]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 27]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 28]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered customers/index.html.erb within layouts/application (52.2ms)
+Completed 200 OK in 79ms (Views: 75.4ms | ActiveRecord: 2.1ms)
+
+
+Started DELETE "/customers/28" for ::1 at 2016-04-24 11:28:53 -0400
+Processing by CustomersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"bZnDyLhxXQGbfTZMet25CWBOGJkiWou20cUCofeX2JgMdK7jwlMBya1r1fAvtPvPE4b+6Fb1j/EzElSHVoh+Mw==", "id"=>"28"}
+  [1m[36mServer Load (0.2ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT 1  [["id", 28]]
+  [1m[36mOrder Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "orders" WHERE "orders"."customer_id" = $1 LIMIT 1[0m  [["customer_id", 28]]
+Redirected to http://localhost:3000/customers
+Completed 302 Found in 77ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/customers" for ::1 at 2016-04-24 11:28:53 -0400
+Processing by CustomersController#index as HTML
+  [1m[35mServer Load (0.2ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT "customers".* FROM "customers"
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 11]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 14]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 18]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 19]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.3ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 15]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 16]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 17]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 26]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 27]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 28]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered customers/index.html.erb within layouts/application (49.1ms)
+Completed 200 OK in 68ms (Views: 65.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/customers/28" for ::1 at 2016-04-24 11:29:03 -0400
+Processing by CustomersController#show as HTML
+  Parameters: {"id"=>"28"}
+  [1m[36mServer Load (0.2ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT  "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT 1  [["id", 28]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mMenuItem Load (0.4ms)[0m  SELECT "menu_items".* FROM "menu_items"
+  Rendered customers/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/orders" for ::1 at 2016-04-24 11:34:06 -0400
+Processing by OrdersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ke7/WaIP1k9eXa1pGnWiUBDBko+C7ibZ/9KJ840hTIJIA5Jy2C2Kh2hLTtVPHOCWYwl0/vZBIp4dBd/VLD7qKQ==", "order"=>{"server_id"=>"1", "customer_id"=>"28", "menu_item_id"=>"4"}, "commit"=>"FINISH ORDER"}
+  [1m[36mServer Load (0.2ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "orders" ("server_id", "menu_item_id", "customer_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["server_id", 1], ["menu_item_id", 4], ["customer_id", 28], ["created_at", "2016-04-24 15:34:06.580536"], ["updated_at", "2016-04-24 15:34:06.580536"]]
+  [1m[35m (33.1ms)[0m  COMMIT
+Redirected to http://localhost:3000/customers
+Completed 302 Found in 37ms (ActiveRecord: 33.8ms)
+
+
+Started GET "/customers" for ::1 at 2016-04-24 11:34:06 -0400
+Processing by CustomersController#index as HTML
+  [1m[36mServer Load (0.2ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 11]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 14]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 18]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 19]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 15]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 16]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.3ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 17]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 26]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 27]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 28]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered customers/index.html.erb within layouts/application (52.3ms)
+Completed 200 OK in 69ms (Views: 65.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/customers" for ::1 at 2016-04-24 11:34:51 -0400
+Processing by CustomersController#index as HTML
+  [1m[35mServer Load (0.2ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCustomer Load (0.2ms)[0m  SELECT "customers".* FROM "customers"
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 11]]
+  Rendered menu_items/_menu_item.html.erb (0.4ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 14]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 18]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 19]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 15]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 16]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 17]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 26]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 27]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 28]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered customers/index.html.erb within layouts/application (47.3ms)
+Completed 200 OK in 71ms (Views: 67.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/servers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:34:51 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-24 11:34:51 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:34:51 -0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:34:51 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-24 11:34:51 -0400
+
+
+Started GET "/assets/application.self-1c7d30267990982660b47a36fde75c81b8bdbaa7e22b076b1a5878abab254224.css?body=1" for ::1 at 2016-04-24 11:34:51 -0400
+
+
+Started GET "/assets/servers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:34:51 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:34:51 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:34:51 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-24 11:34:51 -0400
+
+
+Started GET "/customers" for ::1 at 2016-04-24 11:35:04 -0400
+Processing by CustomersController#index as HTML
+  [1m[36mServer Load (0.2ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCustomer Load (0.4ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 11]]
+  Rendered menu_items/_menu_item.html.erb (0.5ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 14]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 18]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 19]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 15]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 16]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 17]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.2ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 26]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 27]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 28]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered customers/index.html.erb within layouts/application (51.3ms)
+Completed 200 OK in 99ms (Views: 95.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/servers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:35:04 -0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:35:04 -0400
+
+
+Started GET "/assets/application.self-1c7d30267990982660b47a36fde75c81b8bdbaa7e22b076b1a5878abab254224.css?body=1" for ::1 at 2016-04-24 11:35:04 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-24 11:35:04 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:35:04 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-24 11:35:04 -0400
+
+
+Started GET "/assets/servers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:35:04 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:35:04 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:35:04 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-24 11:35:04 -0400
+
+
+Started GET "/customers" for ::1 at 2016-04-24 11:50:15 -0400
+Processing by CustomersController#index as HTML
+  [1m[35mServer Load (0.2ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCustomer Load (0.4ms)[0m  SELECT "customers".* FROM "customers"
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 11]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 14]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 18]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 19]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 15]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 16]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 17]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 26]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 27]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 28]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered customers/index.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 87ms (Views: 83.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.self-6d3c5d82a0a571f1b5b37b4b24d19afc8920c1dcd7d25048d9e1432cf9baf282.css?body=1" for ::1 at 2016-04-24 11:50:16 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-24 11:50:16 -0400
+
+
+Started GET "/assets/servers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:50:16 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:50:16 -0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:50:16 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-24 11:50:16 -0400
+
+
+Started GET "/assets/servers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:50:16 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:50:16 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:50:16 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-24 11:50:16 -0400
+
+
+Started GET "/customers" for ::1 at 2016-04-24 11:50:34 -0400
+Processing by CustomersController#index as HTML
+  [1m[36mServer Load (0.2ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCustomer Load (0.3ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 11]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 14]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 18]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (6.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 19]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 15]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 16]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 17]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 26]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 27]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 28]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered customers/index.html.erb within layouts/application (56.1ms)
+Completed 200 OK in 83ms (Views: 73.6ms | ActiveRecord: 8.3ms)
+
+
+Started GET "/assets/application.self-4575f98334383fdd37621da06c6a49dcf81ab1159154b9bc59472722592890e1.css?body=1" for ::1 at 2016-04-24 11:50:35 -0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:50:35 -0400
+
+
+Started GET "/assets/servers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:50:35 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-24 11:50:35 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:50:35 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-24 11:50:35 -0400
+
+
+Started GET "/assets/servers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:50:35 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:50:35 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:50:35 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-24 11:50:35 -0400
+
+
+Started GET "/customers" for ::1 at 2016-04-24 11:51:08 -0400
+Processing by CustomersController#index as HTML
+  [1m[35mServer Load (0.2ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT "customers".* FROM "customers"
+  [1m[36mMenuItem Load (0.3ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 11]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.2ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 14]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 18]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 19]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 15]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 16]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 17]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 26]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 27]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 28]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered customers/index.html.erb within layouts/application (51.6ms)
+Completed 200 OK in 77ms (Views: 74.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.self-d33952b8389c326356500b56ff663c1e736a516996275deb0fe2203b16bc3e46.css?body=1" for ::1 at 2016-04-24 11:51:08 -0400
+
+
+Started GET "/assets/servers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:51:08 -0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:51:08 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:51:08 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-24 11:51:08 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-24 11:51:08 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:51:08 -0400
+
+
+Started GET "/assets/servers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:51:08 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:51:09 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-24 11:51:09 -0400
+
+
+Started GET "/customers" for ::1 at 2016-04-24 11:51:22 -0400
+Processing by CustomersController#index as HTML
+  [1m[36mServer Load (0.2ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCustomer Load (0.2ms)[0m  [1mSELECT "customers".* FROM "customers"[0m
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 11]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 14]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 18]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.4ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 19]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 15]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 16]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 17]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 26]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.2ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 27]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 28]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered customers/index.html.erb within layouts/application (52.1ms)
+Completed 200 OK in 78ms (Views: 74.4ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.self-b4b801bf03d2fd1c5266a8e73c395e1d4642a7d9f21895f9c3348bb42a481731.css?body=1" for ::1 at 2016-04-24 11:51:22 -0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:51:22 -0400
+
+
+Started GET "/assets/servers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:51:22 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:51:22 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-24 11:51:22 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-24 11:51:22 -0400
+
+
+Started GET "/assets/servers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:51:22 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:51:22 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:51:22 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-24 11:51:23 -0400
+
+
+Started GET "/customers" for ::1 at 2016-04-24 11:59:18 -0400
+Processing by CustomersController#index as HTML
+  [1m[35mServer Load (0.2ms)[0m  SELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "servers".* FROM "servers" WHERE "servers"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  [1m[35mCustomer Load (0.3ms)[0m  SELECT "customers".* FROM "customers"
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 11]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 14]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.0ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 18]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 19]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.2ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 15]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 16]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 17]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 26]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[36mMenuItem Load (0.1ms)[0m  [1mSELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1[0m  [["customer_id", 27]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  [1m[35mMenuItem Load (0.1ms)[0m  SELECT "menu_items".* FROM "menu_items" INNER JOIN "orders" ON "menu_items"."id" = "orders"."menu_item_id" WHERE "orders"."customer_id" = $1  [["customer_id", 28]]
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered menu_items/_menu_item.html.erb (0.1ms)
+  Rendered customers/index.html.erb within layouts/application (49.1ms)
+Completed 200 OK in 66ms (Views: 63.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/servers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:59:19 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-04-24 11:59:19 -0400
+
+
+Started GET "/assets/sessions.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:59:19 -0400
+
+
+Started GET "/assets/application.self-b4b801bf03d2fd1c5266a8e73c395e1d4642a7d9f21895f9c3348bb42a481731.css?body=1" for ::1 at 2016-04-24 11:59:19 -0400
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-04-24 11:59:19 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-04-24 11:59:19 -0400
+
+
+Started GET "/assets/servers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:59:19 -0400
+
+
+Started GET "/assets/sessions.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:59:19 -0400
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-04-24 11:59:19 -0400
+
+
+Started GET "/assets/application.self-377610cd7c1509e934744c810e3b4cf672dfbcacac3274e7d039827e2ae0fcc7.js?body=1" for ::1 at 2016-04-24 11:59:19 -0400

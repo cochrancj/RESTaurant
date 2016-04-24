@@ -222,6 +222,11 @@ p {
   /*padding-right: 2%;*/
 }
 
+.centerline {
+  padding-left: 20%;
+  text-align: center;
+}
+
 .nav-name {
   color: #C3A682;
 }
