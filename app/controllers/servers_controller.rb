@@ -16,8 +16,6 @@ class ServersController < ApplicationController
     redirect_to log_in_path
   end
 
-
-
   def log_in
   end
 

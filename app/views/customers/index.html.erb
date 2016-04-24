@@ -1,10 +1,14 @@
-<div class="server-name">
-  <h4>WELCOME BACK <%= current_server.username %> </h4>
-</div>
+<nav class="server-name">
+  <ul>
+    <li><%= link_to "HOME", :root %> <span class="pipes"> | </span></li>
+    <li><%= link_to "LOG OUT", deletion_path, method: :delete %><span class="pipes"> | </span></li>
+    <li><%= link_to "START NEW ORDER", new_customer_path %><span class="pipes"> | </span></li>
+    <li><span class="nav-name">WELCOME BACK <%= current_server.username %></span></li>
+  </ul>
+</nav>
 
-<div class="form-page-body">
 
-<h1>CUSTOMERS</h1>
+<h1>OPEN ORDERS</h1>
 
 <% @customers.each do |customer| %>
 
@@ -16,12 +20,14 @@
 
     <h4>FOOD ORDER:  <span class="seat-link"> <% customer.menu_items.each do |menu_item| %>
       <%= render partial: "menu_items/menu_item", locals: {menu_item: menu_item} %>
-        <% end %> </h4></span>
+        <% end %> </h4> </span>
     <br>
 
     <%= link_to "MARK AS PAID", customer_path(customer.id), method: :delete %> <span class="pipes">  |  </span>
 
-    <%= link_to "EDIT CUSTOMER", edit_customer_path(customer.id) %>
+    <%= link_to "EDIT CUSTOMER INFO", edit_customer_path(customer.id) %> <span class="pipes">  |  </span>
+
+    <%= link_to "ADD FOOD", customer_path(customer.id) %>
 
     <br>
     <hr>

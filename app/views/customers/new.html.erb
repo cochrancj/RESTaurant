@@ -1,6 +1,10 @@
-<div class="server-name">
-  <h4>WELCOME BACK <%= current_server.username %></h4>
-</div>
+<nav class="server-name">
+  <ul>
+    <li><%= link_to "HOME", :root %> <span class="pipes"> | </span></li>
+    <li><%= link_to "LOG OUT", deletion_path, method: :delete %><span class="pipes"> | </span></li>
+    <li><span class="nav-name">WELCOME BACK <%= current_server.username %></span></li>
+  </ul>
+</nav>
 
 
 
@@ -15,6 +19,13 @@
   <span class="drop-down-arrow"><%= f.select( :seat_number, options_for_select([[1,1],[2,2],[3,3],[4,4],[5,5],[6,6],[7,7],[8,8]] ) ) %></span>
   <br>
 
-  <%= submit_tag "CREATE CUSTOMER", class: "button" %>
+  <%= submit_tag "CREATE ORDER", class: "button" %>
 
   <% end %>
+
+  <nav>
+    <ul>
+      <li><%= link_to "HOME", :root %> <span class="pipes"> | </span></li>
+      <li><%= link_to "LOG OUT", deletion_path, method: :delete %></li>
+    </ul>
+  </nav>

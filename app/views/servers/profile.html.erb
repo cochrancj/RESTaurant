@@ -1,6 +1,10 @@
-<div class="server-name">
-  <h4>WELCOME BACK <%= current_server.username %></h4>
-</div>
+<nav class="server-name">
+  <ul>
+    <li><%= link_to "HOME", :root %> <span class="pipes"> | </span></li>
+    <li><%= link_to "LOG OUT", deletion_path, method: :delete %><span class="pipes"> | </span></li>
+    <li><span class="nav-name">WELCOME BACK <%= current_server.username %></span></li>
+  </ul>
+</nav>
 
 <ul class="body-button">
 
