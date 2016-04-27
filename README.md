@@ -21,6 +21,8 @@ I'm Sally the waitress. As a server, I need to be able to fire this app up on my
 
 #V1.5
   I need to fix it so the changes I made after deploying to Heroku show up in this repo. 
+  Add hover to the links
+  Make spacing nicer to look at on the order rendering page
 
 #V2.0
   In Version 2.0, I want to: get my form styling where i want it (especially those drop-downs); finesse the design a bit to look like original vision (css animations, even more minimalist design); add bill totals for each customer; add tax and tip; combo all customers with the same table number into the same check; add a kitchen view + kitchen functionality (show timestamps, mark as completed, change color as ticket ages); and work on the flow a bit. I'd also like to cut down on the number of clicks a server has to make to complete an order - ideally, I'd like to combine the entire process into one or two screens; and incorporate a modal to print a customer's bill. Admin work flow could use some work as well. 
